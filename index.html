@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Library</title>
+</head>
+
+<body>
+    <header>
+        <div class="overlay"></div>
+        <div class="header-div">
+            <h1>library</h1>
+        </div>
+    </header>
+
+    <section>
+        <button class="add-button">
+            <i class="material-symbols-outlined" preload>add</i>
+            <h3>Add Book</h3>
+        </button>
+
+        <div class="form-div">
+            <h3 class="form-div-title">Add new book</h3>
+            <form action="" id="theForm">
+
+                <label for="author">Author </label>
+                <input type="text" id="author" name="author" value="" required>
+
+                <label for="title">Title </label>
+                <input type="text" id="title" name="title" required>
+
+                <label for='page number'>Number of pages </label>
+                <input type="number" id="numberOfPages" name="page number" required max='10000'>
+
+                <div class="checkbox-div">
+                    <label for="isRead">Did you read it</label>
+                    <input type="checkbox" id="isRead" name="isRead">
+                </div>
+
+                <input type="submit" value="submit" class="submitButton">
+            </form>
+        </div>
+        <div class="book-cards"></div>
+
+    </section>
+    <footer>
+        <p>Copyright © 2022 <a href="https://github.com/dbvaluation" target="_blank">dbvaluation</a>. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>

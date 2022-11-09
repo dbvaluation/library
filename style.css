@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #f5f5f4;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-div {
+    padding: 10px;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    background-color: #d6d3d1;
+    box-shadow: 1px 1px 1px 1px rgba(168, 162, 158, 0.8);
+}
+
+.header-div>h1 {
+    font-size: 2.5rem;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    /**/
+}
+
+.add-button {
+    justify-content: center;
+    font-size: 1.8rem;
+    display: flex;
+    padding: 10px 18px 10px 10px;
+    align-items: center;
+    border: none;
+    background-color: #f5f5f4;
+    height: 80px;
+    margin: auto;
+}
+
+.add-button>i {
+    font-size: 2rem;
+}
+
+.add-button:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #d6d3d1;
+    transition: ease-in 0.13s;
+}
+
+.form-div {
+    margin-top: 20px;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #d6d3d1;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: auto;
+}
+
+.form-div>h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.form-div>form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 30px 25px 25px 25px;
+}
+
+.submitButton {
+    margin-top: 10px;
+    padding: 0px;
+    height: 55px;
+    font-weight: bold;
+}
+
+.submitButton:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+.book-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-div {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-div>input {
+    margin-left: 10px;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.card {
+    word-break: break-all;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr auto;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #d6d3d1;
+    width: 350px;
+    height: 350px;
+    box-shadow: 1px 2px 2px 1px rgba(168, 162, 158, 0.8);
+}
+
+.card>button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+#unreadButton {
+    background-color: lightcoral;
+}
+
+#readButton {
+    background-color: lightgreen;
+}
+
+.readStateButton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.removeButton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
