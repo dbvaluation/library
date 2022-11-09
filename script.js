@@ -109,7 +109,6 @@ document.addEventListener('click', (e) => {
 
 // Read-Unread Toggle Event
 document.addEventListener('click', (e) => {
-    console.log(e.target)
     if (e.target.id == 'unreadButton') {
         e.target.id = 'readButton'
         e.target.textContent = 'Read'
